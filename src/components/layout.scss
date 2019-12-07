@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Solway:300,400,500,700&display=swap');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+
+
+html,  body{
+  font-family: 'Solway', serif;
+  font-weight: 400;
+  background: #F8EFE5;
+}
+
+// Variables
+$black: #181818;
+$white: #ffffff;
+$grey: #F1EDE9;
+$blue: #A2FBF4;
+$light-grey: #353639;
+// Breakpoints
+$mobile-landscape: 30rem; // 480px
+$tablet: 40rem; // 640px
+$tablet-wide: 48rem; // 768px
+$desktop: 64rem; // 1024px
+$widescreen: 71.25rem; // 1140px
+
+// Basic layout
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  @media (max-width: $tablet-wide){
+      width: 100%;
+  }
+}
+
+.illlustraions{
+
+}
+.navbar{
+  .name{
+    padding: 30px 24px;
+    display: flex;
+    align-items: center;
+
+    a{
+      font-size: 20px;
+      text-decoration: none;
+      color: $black;
+      padding: 12px 18px;
+      border: 2px solid rgba(0,0,0,0);
+    }
+    .logo{
+      padding: 12px 0;
+    }
+    .menu{
+      margin-left: 24px;
+      &:hover{
+        border: 2px solid $black;
+      }
+    }
+  }
+}
+.illus-list{
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  -moz-column-gap: 18px;
+  -webkit-column-gap: 18px;
+  column-gap: 18pxpx;
+  padding: 24px;
+  @media (max-width: $mobile-landscape){
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+  }
+  .illus-wrap{
+    display: inline-block;
+    .illus{
+      margin-bottom: 34px;
+      .img{
+        img{
+          width: 100%;
+          &:hover{
+            opacity: .9;
+          }
+        }
+      }
+    }
+    h2{
+      font-size: 24px;
+      margin-top: 8px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+footer{
+  padding: 32px;
+  a{
+    font-size: 22px;
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+.about{
+  .about-wrap{
+    padding: 24px;
+    h1{
+      font-size: 44px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    p{
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 160%;
+      margin-top: 24px;
+    }
+
+    h2{
+      font-size: 22px;
+      margin-top: 32px;
+    }
+    .social-l{
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+      a{
+        display: block;
+        margin-right: 12px;
+        img{
+          height: 32px;
+        }
+      }
+    }
+  }
+}

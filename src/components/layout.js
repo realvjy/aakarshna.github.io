@@ -1,42 +1,33 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import "./layout.scss"
 
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
-
-    if (location.pathname === rootPath) {
-      header = (
-        <h1>
-          <Link
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3>
-          <Link
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
+    let header = (
+      <>
+        <nav className="navbar">
+          <div className="container">
+            <div className="name">
+              <a href="/" className="logo"><img src="/aakarshna.svg" /></a>
+              <a href="/about" className="menu">About</a>
+            </div>
+          </div>
+        </nav>
+      </>
+    )
     return (
       <div>
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <div className="container">
+            © {new Date().getFullYear()},
+            {` `}
+            <a href="https://twitter.com/_aakarshna">Aakarshna</a>
+          </div>
         </footer>
       </div>
     )

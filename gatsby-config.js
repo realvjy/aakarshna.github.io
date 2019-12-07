@@ -3,7 +3,7 @@ module.exports = {
     title: `Aakarsnaa`,
     author: `Aakarshna`,
     description: `I'm here and I know it`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://www.aakarshna.co/`,
     social: {
       twitter: `_aakarshna`,
     },
@@ -57,8 +57,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Aakarshna`,
+        short_name: `aka`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -68,5 +68,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
   ],
 }

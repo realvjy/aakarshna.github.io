@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -13,8 +12,77 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
+        <SEO title="Welcome to Aakarshna" />
+        <div className="illlustrations">
+          <div className="container">
+            <div className="illus-list">
+
+              <div className="illus-wrap">
+                <div className="illus">
+                  <div className="img">
+                    <img src="share.jpg" />
+                  </div>
+                  <h2>Share</h2>
+                </div>
+              </div>
+
+              <div className="illus-wrap">
+                <div className="illus">
+                  <div className="img">
+                    <img src="random.jpg" />
+                  </div>
+                  <h2>Share</h2>
+                </div>
+              </div>
+
+              <div className="illus-wrap">
+                <div className="illus">
+                  <div className="img">
+                    <img src="leaf.jpg" />
+                  </div>
+                  <h2>Share</h2>
+                </div>
+              </div>
+
+              <div className="illus-wrap">
+                <div className="illus">
+                  <div className="img">
+                    <img src="random.jpg" />
+                  </div>
+                  <h2>Share</h2>
+                </div>
+              </div>
+
+              <div className="illus-wrap">
+                <div className="illus">
+                  <div className="img">
+                    <img src="download.jpg" />
+                  </div>
+                  <h2>Share</h2>
+                </div>
+              </div>
+
+              <div className="illus-wrap">
+                <div className="illus">
+                  <div className="img">
+                    <img src="download.jpg" />
+                  </div>
+                  <h2>Share</h2>
+                </div>
+              </div>
+
+              <div className="illus-wrap">
+                <div className="illus">
+                  <div className="img">
+                    <img src="download.jpg" />
+                  </div>
+                  <h2>Share</h2>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </Layout>
     )
   }
