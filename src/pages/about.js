@@ -18,13 +18,9 @@ class About extends React.Component {
             <div className="about-wrap">
 
               <h1>This is about</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Aakarshna (1994) is an illustrator living and working in New Delhi. Her illustrations include happy bright colours and simple geometrical shapes. Her inspiration comes from growing up in the city's hustle-bustle whilst thinking about what life would be elsewhere. When not illustrating, she is working on improving product user experiences.</p>
+              <p> <a href="mailto:aakarshna@hotmail.com?subject=Hello Girl!!">aakarshna@hotmail.com</a> – should you wish to say hello :). </p>
 
-              <h2>Follow me on</h2>
-              <ul className="social-l">
-                <li><a href="https://twitter.com/_aakarshna"><img src="twitter.svg" /></a></li>
-                <li><a href="https://twitter.com/_aakarshna"><img src="twitter.svg" /></a></li>
-              </ul>
             </div>
           </div>
         </div>
