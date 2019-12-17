@@ -17,15 +17,6 @@ class BlogIndex extends React.Component {
           <div className="container">
             <div className="illus-list">
 
-              <div className="illus-wrap">
-                <div className="illus">
-                  <div className="img">
-                    <img src="share.jpg" />
-                  </div>
-                  <h2>Share</h2>
-                </div>
-              </div>
-
               {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (

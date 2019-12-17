@@ -16,6 +16,13 @@ class Layout extends React.Component {
             </div>
           </div>
         </nav>
+        <div className="ak-photo">
+          <div className="container">
+            <div className="logomark">
+              <img src="/logo.png" />
+            </div>  
+          </div>
+        </div>
       </>
     )
     return (
