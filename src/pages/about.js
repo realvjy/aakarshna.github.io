@@ -17,7 +17,6 @@ class About extends React.Component {
           <div className="container">
             <div className="about-wrap">
 
-              <h1>This is about</h1>
               <p>Aakarshna (1994) is an illustrator living and working in New Delhi. Her illustrations include happy bright colours and simple geometrical shapes. Her inspiration comes from growing up in the city's hustle-bustle whilst thinking about what life would be elsewhere. When not illustrating, she is working on improving product user experiences.</p>
               <p> <a href="mailto:aakarshna@hotmail.com?subject=Hello Girl!!">aakarshna@hotmail.com</a> – should you wish to say hello :). </p>
 
@@ -48,7 +47,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
           }
         }
       }
