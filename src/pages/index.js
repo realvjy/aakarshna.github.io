@@ -26,60 +26,19 @@ class BlogIndex extends React.Component {
                 </div>
               </div>
 
-              <div className="illus-wrap">
-                <div className="illus">
-                  <div className="img">
-                    <img src="random.jpg" />
-                  </div>
-                  <h2>Share</h2>
+              {posts.map(({ node }) => {
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                <div className="illus-wrap">
+                  <article key={node.fields.slug} className="illus">
+                    <div className="img">
+                      <img src={node.frontmatter.png.childImageSharp.fluid.src} />
+                    </div>
+                    <h2>{node.frontmatter.title}</h2>
+                  </article>
                 </div>
-              </div>
-
-              <div className="illus-wrap">
-                <div className="illus">
-                  <div className="img">
-                    <img src="leaf.jpg" />
-                  </div>
-                  <h2>Share</h2>
-                </div>
-              </div>
-
-              <div className="illus-wrap">
-                <div className="illus">
-                  <div className="img">
-                    <img src="random.jpg" />
-                  </div>
-                  <h2>Share</h2>
-                </div>
-              </div>
-
-              <div className="illus-wrap">
-                <div className="illus">
-                  <div className="img">
-                    <img src="download.jpg" />
-                  </div>
-                  <h2>Share</h2>
-                </div>
-              </div>
-
-              <div className="illus-wrap">
-                <div className="illus">
-                  <div className="img">
-                    <img src="download.jpg" />
-                  </div>
-                  <h2>Share</h2>
-                </div>
-              </div>
-
-              <div className="illus-wrap">
-                <div className="illus">
-                  <div className="img">
-                    <img src="download.jpg" />
-                  </div>
-                  <h2>Share</h2>
-                </div>
-              </div>
-
+                )
+              })}
             </div>
           </div>
         </div>
@@ -97,17 +56,27 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
-          excerpt
+          excerpt(format: HTML)
+          html
           fields {
             slug
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
+            category
+            png{
+              childImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
           }
         }
       }

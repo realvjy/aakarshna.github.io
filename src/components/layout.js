@@ -24,9 +24,17 @@ class Layout extends React.Component {
         <main>{children}</main>
         <footer>
           <div className="container">
-            © {new Date().getFullYear()},
-            {` `}
-            <a href="https://twitter.com/_aakarshna">Aakarshna</a>
+          <div className="foot">
+            <p>
+              © {new Date().getFullYear()},
+              {` `}
+              <a href="/">Aakarshna</a>
+            </p>
+            <ul className="social-l">
+              <li><a href="https://twitter.com/_aakarshna" target="__blank"><img src="/twitter.svg" /></a></li>
+              <li><a href="https://instagram.com/aakarshna" target="__blank"><img src="/insta.svg" /></a></li>
+            </ul>
+            </div>
           </div>
         </footer>
       </div>

@@ -134,11 +134,36 @@ $widescreen: 71.25rem; // 1140px
 }
 
 footer{
-  padding: 32px;
-  a{
+  .foot{
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    vertical-align: middle;
+
+  }
+  p{
     font-size: 22px;
+  }
+  a{
     color: $black;
     text-decoration: none;
+  }
+  .social-l{
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+    a{
+      display: block;
+      margin-right: 18px;
+      &:hover{
+        opacity: 0.9;
+      }
+      img{
+        height: 22px;
+      }
+    }
   }
 }
 
@@ -153,25 +178,21 @@ footer{
     p{
       font-weight: 300;
       font-size: 22px;
-      line-height: 160%;
+      line-height: 180%;
       margin-top: 24px;
     }
-
-    h2{
-      font-size: 22px;
-      margin-top: 32px;
-    }
-    .social-l{
-      display: flex;
-      flex-direction: row;
-      margin-top: 30px;
-      a{
-        display: block;
-        margin-right: 12px;
-        img{
-          height: 32px;
-        }
+    a{
+      color: $black;
+      font-weight: 500;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
       }
     }
+    h2{
+      font-size: 24px;
+      margin-top: 40px;
+    }
+
   }
 }
