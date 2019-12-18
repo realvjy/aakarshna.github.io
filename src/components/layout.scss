@@ -80,7 +80,6 @@ $widescreen: 71.25rem; // 1140px
     padding: 30px 24px;
     display: flex;
     align-items: center;
-
     a{
       font-size: 20px;
       text-decoration: none;
@@ -93,10 +92,17 @@ $widescreen: 71.25rem; // 1140px
     }
     .menu{
       margin-left: 24px;
+      font-size: 32px;
       &:hover{
         border: 2px solid $black;
       }
     }
+  }
+}
+
+.logomark{
+  img{
+    height: 300px;
   }
 }
 .illus-list{
