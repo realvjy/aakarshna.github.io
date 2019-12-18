@@ -1,6 +1,6 @@
 ---
 title: "Bridge"
-date: 2016-10-18
+date: 2016-11-02
 png: ./Bridge.png
 category:
   - illustration
