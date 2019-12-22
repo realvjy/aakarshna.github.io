@@ -89,6 +89,8 @@ $widescreen: 71.25rem; // 1140px
     }
     .logo{
       padding: 12px 0;
+      font-size: 32px;
+      font-weight: 500;
     }
     .menu{
       margin-left: 24px;
@@ -101,17 +103,18 @@ $widescreen: 71.25rem; // 1140px
 }
 
 .logomark{
+  margin-left: 24px;
   img{
-    height: 300px;
+    height: 200px;
   }
 }
 .illus-list{
   -moz-column-count: 3;
   -webkit-column-count: 3;
   column-count: 3;
-  -moz-column-gap: 18px;
-  -webkit-column-gap: 18px;
-  column-gap: 18pxpx;
+  -moz-column-gap: 36px;
+  -webkit-column-gap: 36px;
+  column-gap: 36pxpx;
   padding: 24px;
   @media (max-width: $mobile-landscape){
       -moz-column-count: 1;
@@ -122,12 +125,37 @@ $widescreen: 71.25rem; // 1140px
     display: inline-block;
     .illus{
       margin-bottom: 34px;
+      position: relative;
       .img{
         img{
           width: 100%;
           &:hover{
             opacity: .9;
+            
           }
+        }
+      }
+      .dwn{
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        opacity: 0;
+        transition: all ease 0.2s;
+        a{
+          display: block;
+          padding: 8px 18px;
+          background: $black;
+          color: $white;
+          border-radius: 4px;
+          text-decoration: none;
+        }
+      }
+      &:hover{
+
+        .dwn{
+          opacity: 1;
+          bottom: 0px;
+          right: 0;
         }
       }
     }

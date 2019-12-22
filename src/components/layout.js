@@ -11,7 +11,7 @@ class Layout extends React.Component {
         <nav className="navbar">
           <div className="container">
             <div className="name">
-              <a href="/" className="logo"><img src="/aakarshna.svg" /></a>
+              <a href="/" className="logo">Aakarshna</a>
               <a href="/about" className="menu">About</a>
             </div>
           </div>
@@ -20,7 +20,7 @@ class Layout extends React.Component {
           <div className="container">
             <div className="logomark">
               <img src="/logo.png" />
-            </div>  
+            </div>
           </div>
         </div>
       </>
