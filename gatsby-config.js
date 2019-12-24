@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Aakarsnaa`,
+    title: `Aakarshna`,
     author: `Aakarshna`,
-    description: `I'm here and I know it`,
+    description: `Aakarshna is an illustrator from New Delhi and this is her collection of happy bright illustrations made using simple geometrical shapes.`,
     siteUrl: `https://www.aakarshna.co/`,
     social: {
       twitter: `_aakarshna`,

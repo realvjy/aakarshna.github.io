@@ -12,7 +12,7 @@ class About extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Aakarshna - about" />
+        <SEO title="About – Aakarshna Portfolio" />
         <div className="about">
           <div className="container">
             <div className="about-wrap">
