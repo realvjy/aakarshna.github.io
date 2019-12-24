@@ -24,6 +24,9 @@ class BlogIndex extends React.Component {
                   <article key={node.fields.slug} className="illus">
                     <div className="img">
                       <img src={node.frontmatter.png.childImageSharp.fluid.src} />
+                      <div className="dwn">
+                        <a href={node.frontmatter.png.childImageSharp.fluid.src} download >Download</a>
+                      </div>
                     </div>
                     <h2>{node.frontmatter.title}</h2>
                   </article>
