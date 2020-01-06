@@ -33,11 +33,19 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s`}
       meta={[
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `keywords`,
+          content: `aakarshna, illustrations, basic illustrations, happy illustrations, bright illustrations, color illustrations, color sketches, basic sketches, human illustrations, illustration, geometrical illustrations`,
+        },
+        {
+          property: `og:image`,
+          content: `https://aakarshna.co/preview.jpg`,
         },
         {
           property: `og:title`,
