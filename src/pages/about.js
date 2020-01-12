@@ -18,7 +18,10 @@ class About extends React.Component {
             <div className="about-wrap">
 
               <p>Aakarshna (1994) is an illustrator living and working in New Delhi. Her illustrations include happy bright colours and simple geometrical shapes. Her inspiration comes from growing up in the city's hustle-bustle whilst thinking about what life would be elsewhere. When not illustrating, she is working on improving product user experiences.</p>
+            </div>
 
+            <div className="about-img">
+              <img src="/aakarshna-about.jpg" />
             </div>
           </div>
         </div>

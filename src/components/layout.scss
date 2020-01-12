@@ -152,7 +152,7 @@ $widescreen: 71.25rem; // 1140px
 
         .dwn{
           opacity: 1;
-          bottom: 0px;
+          bottom: -4px;
           right: 0;
         }
       }
@@ -200,6 +200,12 @@ footer{
 }
 
 .about{
+  .about-img{
+    padding: 24px;
+    img{
+      width: 100%;
+    }
+  }
   .about-wrap{
     padding: 24px;
     h1{
