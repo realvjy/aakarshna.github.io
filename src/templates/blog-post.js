@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
+        <article className="container">
           <header>
             <h1>
               {post.frontmatter.title}
@@ -33,7 +33,7 @@ class BlogPostTemplate extends React.Component {
           </footer>
         </article>
 
-        <nav>
+        <nav className="container">
           <ul>
             <li>
               {previous && (
