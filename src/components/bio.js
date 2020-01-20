@@ -29,10 +29,10 @@ const Bio = () => {
   return (
     <div>
       <p>
-        Written by <strong>{author}</strong> who lives and works on earth
+        Desgined by <strong>{author}</strong>
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+          You should follow her on Twitter
         </a>
       </p>
     </div>
