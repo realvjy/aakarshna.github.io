@@ -18,7 +18,7 @@ class BlogIndex extends React.Component {
             <div className="ak-info">
               <div className="container">
                 <div className="logomark">
-                  <img src="/logo.png" />
+                  <img src="logo.png" />
                 </div>
                 <div className="bio">
                   <h1>Aakarshna</h1>

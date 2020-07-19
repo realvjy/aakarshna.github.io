@@ -249,7 +249,7 @@ $widescreen: 71.25rem; // 1140px
         line-height: 150%;
         padding: 24px;
 
-        
+
       }
     }
     .social-info{
@@ -258,6 +258,7 @@ $widescreen: 71.25rem; // 1140px
       vertical-align: middle;
       align-items: center;
       text-align: center;
+      justify-content: center;
       p{
         font-size: 16px;
       }
