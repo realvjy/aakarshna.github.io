@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Solway:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -45,7 +45,7 @@ table {
 
 
 html,  body{
-  font-family: 'Solway', serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   background: #F8EFE5;
 }
@@ -101,7 +101,6 @@ $widescreen: 71.25rem; // 1140px
 }
 
 .logomark{
-  margin-left: 24px;
   img{
     height: 200px;
   }
@@ -165,39 +164,7 @@ $widescreen: 71.25rem; // 1140px
   }
 }
 
-footer{
-  .foot{
-    padding: 24px;
-    display: flex;
-    flex-direction: row;
 
-    align-items: center;
-    vertical-align: middle;
-
-  }
-  p{
-    font-size: 22px;
-  }
-  a{
-    color: $black;
-    text-decoration: none;
-  }
-  .social-l{
-    display: flex;
-    flex-direction: row;
-    margin-left: 24px;
-    a{
-      display: block;
-      margin-right: 18px;
-      &:hover{
-        opacity: 0.9;
-      }
-      img{
-        height: 22px;
-      }
-    }
-  }
-}
 
 .about{
   .about-img{
@@ -256,4 +223,64 @@ footer{
       text-decoration: underline;
     }
   }
+}
+
+.info{
+  .ak-info{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    .logomark{
+      img{
+        border-radius: 0%;
+      }
+    }
+    .bio{
+      margin-top: 20px;
+      max-width: 500px;
+      h1{
+        font-size: 44px;
+        font-weight: 700;
+      }
+      p{
+        margin-top: 24px;
+        line-height: 150%;
+        padding: 24px;
+
+        
+      }
+    }
+    .social-info{
+      margin-top: 30px;
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      text-align: center;
+      p{
+        font-size: 16px;
+      }
+      a{
+        color: $black;
+        text-decoration: none;
+      }
+      .social-l{
+        display: flex;
+        flex-direction: row;
+        margin-left: 24px;
+        a{
+          display: block;
+          margin-right: 18px;
+          &:hover{
+            opacity: 0.9;
+          }
+          img{
+            height: 22px;
+          }
+        }
+      }
+    }
+  }
+
 }

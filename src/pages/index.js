@@ -13,29 +13,32 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Aakarshna Portfolio" />
-        <div className="illlustrations">
+        <div className="info">
           <div className="container">
-            <div className="illus-list">
-
-              {posts.map(({ node }) => {
-              const title = node.frontmatter.title || node.fields.slug
-              return (
-                <div className="illus-wrap">
-                  <article key={node.fields.slug} className="illus">
-                    <div className="img">
-                      <img src={node.frontmatter.png.childImageSharp.fluid.src} />
-                      <div className="dwn">
-                        <a href={node.frontmatter.png.childImageSharp.fluid.src} download >Download</a>
-                      </div>
-                    </div>
-                    <h2>{node.frontmatter.title}</h2>
-                  </article>
+            <div className="ak-info">
+              <div className="container">
+                <div className="logomark">
+                  <img src="/logo.png" />
                 </div>
-                )
-              })}
+                <div className="bio">
+                  <h1>Aakarshna</h1>
+                  <p>Hello! I'm Aakarshna. I am a full stack product and UX enthusiast from India. I design app experiences at Zomato to help you to discover your favourite food and restaurants.</p>
+                </div>
+                <div className="social-info">
+                  <p>
+                    <a href="mailto:aakarshan@hotmail.com">Email</a>
+                  </p>
+                  <ul className="social-l">
+                    <li><a href="https://twitter.com/_aakarshna" target="__blank"><img src="/twitter.svg" /></a></li>
+                    <li><a href="https://instagram.com/aakarshna" target="__blank"><img src="/insta.svg" /></a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
+
       </Layout>
     )
   }
