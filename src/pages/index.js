@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Tweets from "../components/tweets"
 
 class BlogIndex extends React.Component {
   render() {
@@ -33,6 +34,7 @@ class BlogIndex extends React.Component {
                     <li><a href="https://instagram.com/aakarshna" target="__blank"><img src="/insta.svg" /></a></li>
                   </ul>
                 </div>
+                <Tweets/>
               </div>
             </div>
           </div>
