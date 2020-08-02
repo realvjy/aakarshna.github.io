@@ -19,19 +19,17 @@ class BlogIndex extends React.Component {
             <div className="ak-info">
               <div className="container">
                 <div className="logomark">
-                  <img src="logo.png" />
+                  <img src="aakarshna.png" />
                 </div>
                 <div className="bio">
                   <h1>Aakarshna</h1>
                   <p>Hello! I'm Aakarshna. I am a full stack product and UX enthusiast from India. I design app experiences at Zomato to help you to discover your favourite food and restaurants.</p>
                 </div>
                 <div className="social-info">
-                  <p>
-                    <a href="mailto:aakarshan@hotmail.com">Email</a>
-                  </p>
                   <ul className="social-l">
-                    <li><a href="https://twitter.com/_aakarshna" target="__blank"><img src="/twitter.svg" /></a></li>
-                    <li><a href="https://instagram.com/aakarshna" target="__blank"><img src="/insta.svg" /></a></li>
+                    <li><a href="https://twitter.com/_aakarshna" target="__blank">Twitter </a></li>
+                    <li><a href="https://instagram.com/aakarshna" target="__blank">Instagram</a></li>
+                    <li><a href="https://medium.com/@aakarshna" target="__blank">Medium</a></li>
                   </ul>
                 </div>
                 <Tweets/>

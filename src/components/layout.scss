@@ -234,7 +234,7 @@ $widescreen: 71.25rem; // 1140px
     vertical-align: middle;
     .logomark{
       img{
-        border-radius: 0%;
+        border-radius: 50%;
       }
     }
     .bio{
@@ -271,10 +271,15 @@ $widescreen: 71.25rem; // 1140px
         flex-direction: row;
         margin-left: 24px;
         a{
+          font-size: 16px;
+          font-weight: 500;
           display: block;
           margin-right: 18px;
+          padding: 12px;
           &:hover{
-            opacity: 0.9;
+            opacity: 0.8;
+            background: rgba(10,10,10,0.02);
+            border-radius: 6px;
           }
           img{
             height: 22px;
