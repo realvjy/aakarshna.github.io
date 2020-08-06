@@ -226,12 +226,19 @@ $widescreen: 71.25rem; // 1140px
 }
 
 .info{
+  @media (max-width: $mobile-landscape){
+      margin-top: 80px;
+  }
   .ak-info{
     height: 100vh;
     text-align: center;
     display: flex;
     align-items: center;
     vertical-align: middle;
+    @media (max-width: $mobile-landscape){
+        vertical-align: top;
+        height: auto;
+    }
     .logomark{
       img{
         border-radius: 50%;
@@ -265,6 +272,10 @@ $widescreen: 71.25rem; // 1140px
       align-items: center;
       text-align: center;
       justify-content: center;
+      @media (max-width: $mobile-landscape){
+          margin-top: 20px;
+          margin-bottom: 100px;
+      }
       p{
         font-size: 16px;
       }
@@ -283,6 +294,9 @@ $widescreen: 71.25rem; // 1140px
           list-style: none;
       		position: relative;
       		padding: 0 0 0 20px;
+          @media (max-width: $mobile-landscape){
+              padding: 12px 0;
+          }
           &::before {
       			content: "";
       			position: absolute;
@@ -298,6 +312,7 @@ $widescreen: 71.25rem; // 1140px
             }
       		}
           &:first-child{
+            padding-left: 0;
             &::before {
         			content: "";
         			position: absolute;
