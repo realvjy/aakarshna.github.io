@@ -274,7 +274,7 @@ $widescreen: 71.25rem; // 1140px
       justify-content: center;
       @media (max-width: $mobile-landscape){
           margin-top: 20px;
-          margin-bottom: 100px;
+          margin-bottom: 20px;
       }
       p{
         font-size: 16px;
@@ -402,5 +402,43 @@ $widescreen: 71.25rem; // 1140px
   &.ph{
     background: #da552f;
     // background: $black;
+  }
+}
+
+.noted{
+  margin-top: 36px;
+  padding: 12px;
+  @media (max-width: $mobile-landscape){
+      margin-top: 20px;
+      margin-bottom: 60px;
+  }
+  .noted-wrap{
+    background: #B0E2FF;
+    margin: 0 auto;
+    border-radius: 12px;
+
+    a{
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      padding: 4px;
+      justify-content: center;
+      text-decoration: none;
+      color: $black;
+      img{
+        height: 80px;
+      }
+      p{
+        font-size: 22px;
+        font-weight: 600;
+        @media (max-width: $mobile-landscape){
+            font-size: 18px;
+            line-height: 140%;
+        }
+        span{
+          font-weight: 800;
+        }
+      }
+    }
   }
 }

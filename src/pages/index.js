@@ -43,6 +43,11 @@ class BlogIndex extends React.Component {
                     <li><a href="https://instagram.com/aakarshna" target="__blank">Instagram </a></li>
                   </ul>
                 </div>
+                <div className="noted">
+                  <div className="noted-wrap">
+                    <a href="/noted"><img src="noted-by-ak.gif" className="img-gif" /><p><span>Noted</span>:  Level up your note taking on Figma</p></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
