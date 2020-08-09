@@ -370,8 +370,8 @@ $widescreen: 71.25rem; // 1140px
         }
       }
       img{
-        height: 44px;
-        margin-top: -6px;
+        height: 46px;
+        margin-top: -3px;
         margin-right: 2px;
         vertical-align: middle;
         @media (max-width: $mobile-landscape){
@@ -384,7 +384,8 @@ $widescreen: 71.25rem; // 1140px
   &.designletter{
     background: #0D38CE;
     img{
-      height: 20px!important;
+      height: 23px!important;
+      margin-top: 3px;
       vertical-align: middle;
     }
     a{
