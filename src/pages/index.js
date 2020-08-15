@@ -31,7 +31,7 @@ class BlogIndex extends React.Component {
                 </div>
                 <div className="bio">
                   <h1>Aakarshna</h1>
-                  <p>Hello! I am a full stack product and UX enthusiast from India. I design app experiences at <a href="https://zomato.com">Zomato</a> to help you to discover your favourite food and restaurants.</p>
+                  <p>Hello! I am a full stack product, design and UX enthusiast from India. I design app experiences at Zomato to help you to discover your favourite food and restaurants.</p>
                 </div>
                 <div className="social-info">
                   <ul className="social-l">

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Aakarshna`,
     author: `Aakarshna`,
-    description: `Full stack product and UX enthusiast`,
+    description: `Full stack product, design, and ux enthusiast at Zomato. Maker of Noted. Curating the best design stories at Designletter.`,
     siteUrl: `https://www.aakarshna.co/`,
     social: {
       twitter: `_aakarshna`,
