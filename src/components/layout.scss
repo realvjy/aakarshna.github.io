@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
 
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -45,7 +45,7 @@ table {
 
 
 html,  body{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Song Myung', serif;
   font-weight: 400;
   background: #FFFFFF;
 }
@@ -231,7 +231,7 @@ $widescreen: 71.25rem; // 1140px
   }
   .ak-info{
     height: 100vh;
-    text-align: center;
+    text-align: left;
     display: flex;
     align-items: center;
     vertical-align: middle;
@@ -246,7 +246,7 @@ $widescreen: 71.25rem; // 1140px
     }
     .bio{
       margin-top: 10px;
-      max-width: 590px;
+      max-width: 750px;
       margin: 0 auto;
       h1{
         margin-top: 40px;
@@ -254,10 +254,14 @@ $widescreen: 71.25rem; // 1140px
         font-weight: 700;
       }
       p{
-        font-size: 20px;
+        font-size: 100px;
         margin-top: 10px;
-        line-height: 150%;
+        line-height: 110%;
+        letter-spacing: -.5px;
         padding: 24px;
+        @media (max-width: $mobile-landscape){
+            font-size: 54px;
+        }
         a{
           font-weight: 600;
           color: $black;
@@ -270,8 +274,8 @@ $widescreen: 71.25rem; // 1140px
       display: flex;
       vertical-align: middle;
       align-items: center;
-      text-align: center;
-      justify-content: center;
+      text-align: left;
+      justify-content: left;
       @media (max-width: $mobile-landscape){
           margin-top: 20px;
           margin-bottom: 20px;

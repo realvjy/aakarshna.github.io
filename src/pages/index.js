@@ -15,38 +15,25 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Aakarshna Portfolio" />
         <>
-        <div className="announce-wrapper designletter">
-          <div className="container">
-            <div className="an-details">
-              <p><a href="https://designletter.co/?ref=aakarshna" target="_blank">Subscribe to <img src="/designletter-logo.png" /><span>: A weekly newsletter with design resources and inspiration for everyone</span></a></p>
-            </div>
-          </div>
-        </div>
         <div className="info">
           <div className="container">
             <div className="ak-info">
               <div className="container">
-                <div className="logomark">
-                  <img src="aakarshna.png" />
-                </div>
+
                 <div className="bio">
-                  <h1>Aakarshna</h1>
-                  <p>Hello! I am a full stack product, design and UX enthusiast from India. I design app experiences at Zomato to help you to discover your favourite food and restaurants.</p>
+
+                  <p>Hello! <br/>
+                  I’m Aakarshna.<br/>
+                  I like the idea of
+                  having my own
+                  domain,<br/>
+                  so here you are.</p>
                 </div>
                 <div className="social-info">
                   <ul className="social-l">
-                    <li><a href="mailto:aakarshna@hotmail.com?Subject=Hey!" target="__blank">Email </a></li>
-                    <li><a href="https://twitter.com/_aakarshna" target="__blank">Twitter</a></li>
-                    <li><a href="https://medium.com/@aakarshna" target="__blank">Medium</a></li>
-                    <li><a href="https://designletter.co" target="__blank">Designletter</a></li>
+                    <li><a href="https://twitter.com/aakarshnaanand" target="__blank">Twitter</a></li>
                     <li><a href="https://linkedin.com/in/aakarshna" target="__blank">LinkedIn</a></li>
-                    <li><a href="https://instagram.com/aakarshna" target="__blank">Instagram </a></li>
                   </ul>
-                </div>
-                <div className="noted">
-                  <div className="noted-wrap">
-                    <a href="/noted"><img src="noted-by-ak.gif" className="img-gif" /><p><span>Noted</span>:  Level up your note taking on Figma</p></a>
-                  </div>
                 </div>
               </div>
             </div>
